@@ -1,0 +1,8 @@
+// for checking my username
+whoami
+
+//for checking my current staying directory
+pwd
+
+// for date
+date
