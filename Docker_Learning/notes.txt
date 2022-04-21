@@ -1,0 +1,24 @@
+pc -> cpu or we can say processor
+    -> Ram
+    -> Storage
+
+*if we want to wrk with this three thing , we need an operating system.
+   -> So, OS have Karnel where have many driver
+   -> And Karnel manage the above three hardware with the help of driver.
+   -> for talking with OS we need software(nodejs, python, brawser).
+
+flow
+User -> software -> requesting -> Karnel -> then carnel execute the request the help of Hardwares
+
+*** every Os take resgistry for maintain software
+
+
+// For the first photo
+-> first area Hardware level Vertaualaization. (expample:- VMWARE, VirtalBox, Hyper V)
+
+//for the second photo  
+-> We see HOST OS or Mother OS Who provide the vistualation os
+
+//for the third photo
+-> problem discustion , that a OS not handling different node app, that's why we need another os confiquaration , It's a problem and we need to solve.
+
