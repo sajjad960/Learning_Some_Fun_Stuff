@@ -22,3 +22,9 @@ User -> software -> requesting -> Karnel -> then carnel execute the request the 
 //for the third photo
 -> problem discustion , that a OS not handling different node app, that's why we need another os confiquaration , It's a problem and we need to solve.
 
+
+//for photo 4
+-> learned container
+
+//for photo 5
+-> docker deep dive
