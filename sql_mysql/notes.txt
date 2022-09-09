@@ -29,5 +29,36 @@ example:- Field/Columns -> Id, name, fav
       - table details
            cmd - describe coffee_table
       - insert data into table
-          cmd - 
+          cmd - insert into coffee_table values (3, "helpdest", "hondruns", "medium");
       
+      - insert manay data into table
+          cmd - insert into coffee_table values (2, "docker run", "mexico", "mexeco"),(3, "helpdest", "hondruns", "medium");
+
+// Finding
+  finding with where (here origin is a Field)
+    cmd - select * from avengers where origin = "earth";
+    cmd - select * from avengers where origin = "earth" or origin = "asgard";
+
+  finding a single Field (alias is a field);
+  cmd - select alias from avengers where age > 1000;
+
+  finding where not;
+  cmd - select alias from avengers where not origin = "earth";
+  
+// Deleteing 
+    delete a single field
+      cmd - delete from avengers where first_name = "clint";
+
+// Update
+  for updating single feild depend on another one
+      cmd - update avengers set last_name = NULL where first_name = "thor";
+
+// Order By 
+    select * from avengers order by age desc; // decending
+    select * from avengers order by age asc;  // asending
+
+// Adding a extra field
+     cmd - 
+
+
+
