@@ -1,0 +1,34 @@
+version: '3.8'
+services:
+  promotionmongo:
+    image: mongo:latest
+    container_name: promotionmongo
+    ports:
+      - 27018:27017
+    networks:
+      - mydockernet
+    volumes:
+      - 'promotionmongo:/data/db'
+  promotionserver:
+    image: promotionserver:001
+    container_name: promotionserver
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 10001:10001
+    networks:
+      - mydockernet
+    environment:
+      - NODE_ENV=production
+      - LOCAL_DATABASE=mongodb://promotionmongo:27017/promotion
+      - JWT_SECRET_USER=1951AD400108D5B2968FC7B09CC98E40930BC6D1C5B2C471951AD40BC6D1C5B2C47195100108D5B2968
+      - JWT_SECRET_ADMIN=1951AD400108D508D1CAE761ED90D78D1CAE761ED90D7C98E4093AD400108D5B2968FC7B09CFC7B09C0
+      - PORT=10001
+    depends_on:
+      - promotionmongo
+networks:
+  mydockernet:
+    driver: bridge
+volumes:
+  promotionmongo: null

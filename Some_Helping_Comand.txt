@@ -6,3 +6,25 @@ pwd
 
 // for date
 date
+
+
+// Checking is try anyone to hack
+
+     i. check last login
+
+       cmd - lastlog -u username
+
+       
+
+// Find auth log specific ssh attack or failure in linux
+
+	 i. finding text with the sshd
+
+	   cmd - cat /var/log/auth.log | grep -e "sshd"
+
+	   
+
+// check users whoes are currently logged in
+
+	 i. cmd - who
+

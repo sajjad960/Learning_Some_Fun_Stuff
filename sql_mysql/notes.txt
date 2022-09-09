@@ -28,4 +28,6 @@ example:- Field/Columns -> Id, name, fav
           cmd - create table coffee_table (id int, name varchar(255), region varchar(255), roast varchar(255));
       - table details
            cmd - describe coffee_table
+      - insert data into table
+          cmd - 
       
