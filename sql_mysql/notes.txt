@@ -1,0 +1,31 @@
+// Basically,
+MongoDb, Mysql
+--------------
+Fields, Columns
+Records, rows
+
+example:- Field/Columns -> Id, name, fav
+          Records, rows -> 1,2,3 Bob,Chunk,Devid Coffee,Coffee, Tea
+
+* Mysql is bassically a DBMS(Database_Management_System)
+     -> connection with server
+        With Host,
+            cmd- sudo mysql -u root -h sql.myserver.com -p 3306 -p
+            - then enter password and connect
+        Without Host,
+            cmd- sudo mysql -u sajjad -p
+              - then enter password and connect
+
+    -> Creating Database
+      cmd - create database testdb
+
+    -> Using database
+      cmd - use testdb
+
+    -> Working With Table (Schema)
+      -show table cmd - show tables;
+      -if there no table create one,
+          cmd - create table coffee_table (id int, name varchar(255), region varchar(255), roast varchar(255));
+      - table details
+           cmd - describe coffee_table
+      
