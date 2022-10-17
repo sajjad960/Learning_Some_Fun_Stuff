@@ -58,7 +58,26 @@ example:- Field/Columns -> Id, name, fav
     select * from avengers order by age asc;  // asending
 
 // Adding a extra field
-     cmd - 
+     cmd - alter table avengers add bread boolean;
+
+
+// Mysql relations
+- Suppose there are two table, photos and users
+- create relelation between them, so that the foreign key data autometically update.
+CREATE TABLE photos (
+  id SERIAL PRIMARY KEY,
+  url VARCHAR(200),
+  user_id INTERGER REFERENCES users(id)
+)
+
+// Serialing
+CREATE TABLE photos (
+  id SERIAL PRIMARY KEY, url VARCHAR(50)
+)
+
+
+// Others
+varchar - variable length string (string limit);
 
 
 
